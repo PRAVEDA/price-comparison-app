@@ -1,0 +1,21 @@
+{
+  "framework": "services",
+  "experimentalServices": {
+    "frontend": {
+      "entrypoint": "frontend/dist",
+      "routePrefix": "/",
+      "framework": "vite"
+    },
+    "backend": {
+      "entrypoint": "backend/server.js",
+      "routePrefix": "/_/backend",
+      "framework": "express"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/favicon.svg"
+    }
+  ]
+}
