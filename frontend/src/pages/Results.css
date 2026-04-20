@@ -1,0 +1,159 @@
+.results-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00205B 0%, #0a0e27 100%);
+    padding: 20px;
+    padding-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.results-header {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.results-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+
+.results-header p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 🔥 MAP */
+.map-section {
+    max-width: 1300px;
+    margin: 0 auto 40px auto;
+}
+
+.map-container {
+    height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 30px rgba(0, 32, 91, 0.4);
+}
+
+.map-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.map-info-badge {
+    display: inline-block;
+    background: rgba(0, 32, 91, 0.2);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* 🔥 4 CARDS IN ONE LINE */
+.rides-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* EXACTLY 4 */
+    gap: 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* 🔥 CARD DESIGN */
+.ride-card {
+    background: #000000;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 6px 25px rgba(0, 32, 91, 0.4);
+    position: relative;
+    transition: 0.3s ease;
+    min-height: 200px;
+}
+
+.ride-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Cheapest badge */
+.cheapest-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00205B;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+/* Header */
+.ride-app-name {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Details */
+.ride-details {
+    margin: 12px 0;
+}
+
+.detail-text {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.detail-label {
+    display: block;
+    font-size: 11px;
+    color: #777;
+}
+
+/* Price */
+.ride-price-section {
+    margin: 15px 0;
+}
+
+.price-amount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.price-currency {
+    font-size: 16px;
+}
+
+.price-label {
+    display: block;
+    font-size: 11px;
+    color: #888;
+}
+
+/* Button */
+.book-button {
+    width: 100%;
+    padding: 12px;
+    background: #00205B;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background: #003c9e;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+    .rides-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .rides-grid {
+        grid-template-columns: 1fr;
+    }
+}
